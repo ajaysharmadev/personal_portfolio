@@ -1,0 +1,232 @@
+/* CSS RESET */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
+
+
+/* Navbar */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  section{
+    background: center/cover no-repeat url(bgimg.jpg);
+    background-color: #fff689;
+  }
+  nav{
+    background: #e03616;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    font-family: 'Staatliches', cursive;  
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-family: 'Roboto', sans-serif !important;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{
+    background: #93a3b1;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+      font-family: 'Roboto', sans-serif;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+      
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+
+  }
+
+#propic {
+    display: flex;
+    justify-content: center;
+    padding: 4vh 0 2vh ;
+}
+/* Profile Image Properties */
+#proimg {
+   width: 25;
+   height: 25vh;
+   border: dotted 0.3em;
+   border-radius: 50%;
+}
+/* about name Title Properties*/
+#nameTitle{
+    display: flex;
+    justify-content: center;
+    font-family: 'Noto Serif', serif;
+    padding: 2vh;
+    font-size: 5rem;
+
+}
+/* about info Propeties */
+#aboutInfo {
+    display: flex;
+    justify-content: center;
+    padding: 2vh 25%;
+    font-size: 2rem;
+    font-family: 'Nunito Sans', sans-serif;
+}
+/* skills properties */
+#skill {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vh 30%;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 3rem; 
+
+}
+/* Hobbies properties */
+#hobbie {
+  display: flex;
+  padding: 2vh 30%;
+  justify-content: center;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 3rem;
+  
+}
+
+/* FOOTER css */
+footer{
+  background-color: #e03616;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+/* star colors */
+i {
+  color: #5998c5;
+}
+
+/* HR */
+hr { 
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}

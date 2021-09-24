@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>ABOUT ME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <section>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">AJAY SHARMA</label>
+        <ul>
+          <li><a class="active" href="index.html">About ME</a></li>
+          <li><a href="hobbies.html">My Hobbies</a></li>
+          <li><a href="skills.html">Skills</a></li>
+        </ul>
+      </nav>
+      
+      <div id="propic">
+        <img
+          id="proimg"
+          src="data:image/png;base64,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"
+        />
+      </div>
+  
+      <div>
+        <h1 id="nameTitle">AJAY SHARMA</h1>
+        <hr>
+      </div>
+      <div>
+        <p id="aboutInfo">
+        Welcome Friends!<br>
+        My name is Ajay Sharma. I am a first year undergraduate at NSUT Delhi. I am a newbie in web development, but interested in learning it. I like to explore new topics.</p>
+      </div>
+      <script
+        src="https://kit.fontawesome.com/12e94809c0.js"
+        crossorigin="anonymous"
+      ></script>
+    </section>
+    
+  </body>
+  <!-- Footer -->
+  <footer>
+    <p>Designed By Ajay Sharma.</p>
+  </footer>
+</html>
